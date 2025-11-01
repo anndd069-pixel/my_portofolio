@@ -105,34 +105,34 @@ export default function Education() {
                 <div className="absolute bottom-0 right-0 w-16 h-16 border-b border-r border-[#FFD700] rounded-br-xl opacity-60 group-hover:opacity-100 transition-opacity duration-300"></div>
 
                 <div className="relative z-10">
-                  <div className="flex items-center gap-6 mb-6">
-                    <div className="flex items-center gap-4">
+                  <div className="flex flex-col md:flex-row gap-6 mb-6">
+                    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                       {/* Icon */}
-                      <div className="w-16 h-16 flex-shrink-0 flex items-center justify-center bg-gradient-to-br from-[#B8860B] to-[#FFD700] rounded-full shadow-[0_0_15px_rgba(255,215,0,0.3)] group-hover:shadow-[0_0_20px_rgba(255,215,0,0.5)] group-hover:scale-110 transition-all duration-300">
-                        <span className="text-4xl transform group-hover:rotate-12 transition-transform duration-300">{edu.icon}</span>
+                      <div className="w-14 h-14 md:w-16 md:h-16 flex-shrink-0 flex items-center justify-center bg-gradient-to-br from-[#B8860B] to-[#FFD700] rounded-full shadow-[0_0_15px_rgba(255,215,0,0.3)] group-hover:shadow-[0_0_20px_rgba(255,215,0,0.5)] group-hover:scale-110 transition-all duration-300">
+                        <span className="text-3xl md:text-4xl transform group-hover:rotate-12 transition-transform duration-300">{edu.icon}</span>
                       </div>
                       {/* Period */}
-                      <span className="flex-shrink-0 whitespace-nowrap bg-[#FFD700]/10 text-[#FFD700] px-6 py-2 rounded-full border border-[#FFD700]/30 font-serif text-lg shadow-inner">
+                      <span className="flex-shrink-0 whitespace-nowrap bg-[#FFD700]/10 text-[#FFD700] px-4 md:px-6 py-1.5 md:py-2 rounded-full border border-[#FFD700]/30 font-serif text-base md:text-lg shadow-inner">
                         {edu.period}
                       </span>
                     </div>
                     {/* School & Degree */}
                     <div className="flex-grow">
-                      <h3 className="text-2xl font-serif font-bold text-[#FFD700] group-hover:text-[#FFD700]">
+                      <h3 className="text-xl md:text-2xl font-serif font-bold text-[#FFD700] group-hover:text-[#FFD700]">
                         {edu.school}
                       </h3>
-                      <p className="text-[#DAA520] font-medium text-lg">{edu.degree}</p>
+                      <p className="text-[#DAA520] font-medium text-base md:text-lg">{edu.degree}</p>
                     </div>
                   </div>
 
-                  <div className="mt-6 md:mt-0 md:ml-24 pl-6 border-l border-[#FFD700]/60 group-hover:border-[#FFD700] transition-colors duration-300">
-                    <p className="text-[#DAA520] text-lg mb-4 leading-relaxed">{edu.description}</p>
+                  <div className="mt-4 md:mt-0 md:ml-24 pl-4 md:pl-6 border-l border-[#FFD700]/60 group-hover:border-[#FFD700] transition-colors duration-300">
+                    <p className="text-[#DAA520] text-base md:text-lg mb-4 leading-relaxed">{edu.description}</p>
                     
-                    <ul className="space-y-3">
+                    <ul className="space-y-2 md:space-y-3">
                       {edu.achievements.map((achievement, i) => (
-                        <li key={i} className="flex items-center text-[#B8860B] group-hover:text-[#DAA520] transition-colors duration-300">
-                          <span className="w-2 h-2 bg-[#FFD700] rounded-full mr-3 shadow-[0_0_8px_rgba(255,215,0,0.6)] group-hover:scale-125 transition-transform duration-300"></span>
-                          <span className="text-lg">{achievement}</span>
+                        <li key={i} className="flex items-start md:items-center text-[#B8860B] group-hover:text-[#DAA520] transition-colors duration-300">
+                          <span className="w-2 h-2 bg-[#FFD700] rounded-full mr-3 mt-2 md:mt-0 shadow-[0_0_8px_rgba(255,215,0,0.6)] group-hover:scale-125 transition-transform duration-300"></span>
+                          <span className="text-base md:text-lg">{achievement}</span>
                         </li>
                       ))}
                     </ul>
