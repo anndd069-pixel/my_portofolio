@@ -85,9 +85,9 @@ export default function Education() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-serif font-bold text-[#FFD700] relative inline-block">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#FFD700] relative inline-block px-4">
             <span className="relative">
-              Riwayat Pendidikan Sihir
+              Pendidikan Sihir
               <div className="absolute -bottom-2 left-0 w-full h-1 bg-[#FFD700] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
             </span>
           </h2>
@@ -97,7 +97,7 @@ export default function Education() {
           {educationHistory.map((edu, index) => (
             <div 
               key={index}
-              className="mb-12 transform hover:-translate-y-1 transition-all duration-300"
+              className="mb-12 transform hover:-translate-y-1 transition-all duration-300 px-4 sm:px-6"
             >
               <div className="relative bg-black/80 backdrop-blur-lg rounded-xl p-8 border border-[#FFD700] shadow-[0_0_15px_rgba(255,215,0,0.3)] hover:shadow-[0_0_25px_rgba(255,215,0,0.5)] group">
                 {/* Decorative Corner Elements */}
